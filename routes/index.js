@@ -1,16 +1,14 @@
 const express = require("express");
 const routes = express.Router();
-const fs = require("fs");
+const createBE = require("./createBE");
 
-const createFile = (req, res) => {
-  return 3;
-};
-
-routes.get("/", (req, res) => {
-  console.log("object");
+routes.get("/", createBE);
+routes.get("/xxx", (_, res) => {
+  res.json({
+    xxx: "xxx"
+  });
 });
 
-routes.post("/", createFile);
+routes.post("/create", createBE);
 
 module.exports = routes;
-module.exports.createFile = createFile;
