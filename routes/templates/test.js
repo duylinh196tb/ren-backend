@@ -17,7 +17,7 @@ const initalData = {
   url: "/cms/${model.toLowerCase()}s"
 };
 
-describe("### SERVICE", () => {
+describe("### ${model.toUpperCase()}", () => {
   const data = {
     thumbnail: "question 1",
     detail: "3",

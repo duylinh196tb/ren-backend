@@ -17,7 +17,7 @@ const initalData = {
   url: "/cms/users"
 };
 
-describe("### SERVICE", () => {
+describe("### USER", () => {
   const data = {
     thumbnail: "question 1",
     detail: "3",
